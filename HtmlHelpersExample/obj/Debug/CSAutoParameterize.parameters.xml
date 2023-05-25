@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="htmlhelpersdatabaseEntities-Web.config Connection String" description="htmlhelpersdatabaseEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=localhost;initial catalog=htmlhelpersdatabase;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\labPracticals\\HtmlHelpersExample\\HtmlHelpersExample\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='htmlhelpersdatabaseEntities']/@connectionString" />
+  </parameter>
+  <parameter name="htmlhelpersdatabaseEntities1-Web.config Connection String" description="htmlhelpersdatabaseEntities1 Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Model.csdl|res://*/Models.Model.ssdl|res://*/Models.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=localhost;initial catalog=htmlhelpersdatabase;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\labPracticals\\HtmlHelpersExample\\HtmlHelpersExample\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='htmlhelpersdatabaseEntities1']/@connectionString" />
+  </parameter>
+  <parameter name="htmlhelpersdatabaseEntities2-Web.config Connection String" description="htmlhelpersdatabaseEntities2 Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=localhost;initial catalog=htmlhelpersdatabase;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\labPracticals\\HtmlHelpersExample\\HtmlHelpersExample\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='htmlhelpersdatabaseEntities2']/@connectionString" />
+  </parameter>
+</parameters>

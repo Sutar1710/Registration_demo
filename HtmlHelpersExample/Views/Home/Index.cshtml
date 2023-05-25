@@ -1,0 +1,64 @@
+﻿@model HtmlHelpersExample.Models.Employee
+<html>
+<head>
+    <title>HTML Helpers</title>
+</head>
+<body>
+    <h1>HTML Helpers</h1>
+    @using (Html.BeginForm("InsertEmp", "Home", FormMethod.Post))
+    {
+        @Html.LabelFor(temp => temp.EmpID)
+        @Html.TextBoxFor(temp => temp.EmpID)
+        @Html.ValidationMessageFor(temp => temp.EmpID)
+
+        <br />
+        @Html.LabelFor(temp => temp.EmpName)
+        @Html.TextBoxFor(temp => temp.EmpName)
+        @Html.ValidationMessageFor(temp => temp.EmpName)
+
+        <br />
+        @Html.LabelFor(temp => temp.Username)
+        @Html.TextBoxFor(temp => temp.Username)
+        @Html.ValidationMessageFor(temp => temp.Username)
+        <br />
+        @Html.LabelFor(temp => temp.Password)
+        @Html.PasswordFor(temp => temp.Password)
+        @Html.ValidationMessageFor(temp => temp.Password)
+
+        <br />
+        @Html.LabelFor(temp => temp.Mobile)
+        @Html.TextBoxFor(temp => temp.Mobile)
+        @Html.ValidationMessageFor(temp => temp.Mobile)
+        <br />
+        @Html.LabelFor(temp => temp.Email)
+        @Html.TextBoxFor(temp => temp.Email)
+        @Html.ValidationMessageFor(temp => temp.Email)
+        <br />
+        @Html.LabelFor(temp => temp.Address)
+        @Html.TextAreaFor(temp => temp.Address)
+        @Html.ValidationMessageFor(temp => temp.Address)
+        <br />
+        @Html.LabelFor(temp => temp.Gender)
+        @Html.RadioButtonFor(temp => temp.Gender, "Male") @:Male
+        @Html.RadioButtonFor(temp => temp.Gender, "Female") @:Female
+        @Html.ValidationMessageFor(temp => temp.Gender)
+        <br />
+        @Html.LabelFor(temp => temp.Salary)
+        @Html.TextBoxFor(temp => temp.Salary)
+        @Html.ValidationMessageFor(temp => temp.Salary)
+        <br />
+        @Html.LabelFor(temp => temp.Country)
+        @Html.DropDownListFor(temp => temp.Country, new List<SelectListItem> {
+
+    new SelectListItem() { Text = "India"},
+ new SelectListItem() { Text = "United States", Value = "USA"},
+ new SelectListItem() { Text = "Japan", Value = "JPN"},
+ }, "Please Select")
+        @Html.ValidationMessageFor(temp => temp.Country)
+        <br />
+
+        <input type="submit" value="Submit" />
+        @Html.ValidationSummary()
+    }
+</body>
+</html>
